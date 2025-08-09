@@ -1,0 +1,16 @@
+{
+  "name": "NetFSM",
+  "description": "A network of synchronous finite automata has been implemented",
+  "version": "0.0.1",
+  "authors": {
+    "name": "Lyubchenko Vyacheslav"
+  },
+  "export": {
+    "include": ["NetFSM", "examples", "LICENSE.txt", "VCPa.h"]
+  },
+  "frameworks": "*",
+  "platforms": "*",
+  "build": {
+    "libArchive": false
+  }
+}
