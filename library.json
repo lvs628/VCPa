@@ -1,0 +1,19 @@
+{
+  "name": "VCPa",
+  "version": "1.0.0",
+  "keywords": "esp32, arduino",
+  "description": "A network of synchronous finite automata has been implemented",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvs628/VCPa.git"
+  },
+  "authors": {
+    "name": "Lyubchenko Vyacheslav"
+    "email": "sllubch@mail.ru"
+  },
+  "export": {
+    "include": ["examples", "LICENSE.txt"]
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
