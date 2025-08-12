@@ -1,3 +1,3 @@
 # VCPa
-##VСPa configurations for the Habr site.
+Library for interpreting automaton networks.
 
