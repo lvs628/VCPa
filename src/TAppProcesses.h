@@ -1,4 +1,6 @@
 #pragma once
+#include "SetVarSetting.h"
+#include "netfsa.h"
 #include "TAppVar.h"
 #include "deffsaprc.h"
 
@@ -10,7 +12,7 @@ public:
 	CLocVar* InsertVar(CVar* pVar, LFsaAppl *pL=NULL);
 	CLocVar* ReplaceVar(CVar* pVar, LFsaAppl *pL=NULL);
 	CLocVar* DeleteVar(const char* nam, LFsaAppl *pL=NULL);
-	CLocVar* GetAddressVar(const char* nam, LFsaAppl *pL=NULL);		// �������� ������ �� ���������� nam
+	CLocVar* GetAddressVar(const char* nam, LFsaAppl *pL=NULL);
 	bool LinkVar();
 	TAppProcesses(void);
 	~TAppProcesses(void);
@@ -21,7 +23,7 @@ public:
 
 union ucrc {
     _int16 uiValue;
-    unsigned char ucCRC[2];				// ����� CRC 0,1
+    unsigned char ucCRC[2];
 };
 
 union fl {
@@ -39,3 +41,7 @@ union fint {
     unsigned char ach[2];
     int d;
 };
+extern TAppProcesses *pTAppProcesses;
+TAppProcesses* VCPaCore_init();
+void VCPaCore_TimerEvent(int nId);
+void LoadingFsaProsesses();
