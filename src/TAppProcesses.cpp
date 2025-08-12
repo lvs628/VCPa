@@ -20,9 +20,6 @@ TAppProcesses::TAppProcesses(void)
     :TAppVar()
 {
     pTAppDrv = nullptr;
-    for (int i=0; i<10; i++ ) {
-        arLibraryFsa[i] = nullptr;
-    }
     ReloadVCPa();
 }
 

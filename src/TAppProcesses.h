@@ -18,7 +18,6 @@ public:
 	~TAppProcesses(void);
     int LoadConfig();
     virtual bool LoadConfiguration(void);
-    LFsaAppl* arLibraryFsa[10];
 };
 
 union ucrc {
